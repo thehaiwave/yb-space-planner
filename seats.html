@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" name= "viewport" content="width=device-width,initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scal=1.0">
+        <title>Blue Yonder Challenge</title>
+        <link rel="stylesheet" href="seatsstyle.css">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    </head>
+    
+    <body>
+        <div class="nav">
+            <button class ="logo"><a href="index.html">Brito Airways</a></button>
+            <button class ="b1"><a href="seats.html">Book a seat</a></button>
+        </div>
+        <main>
+            <div class="main-content">
+                <div class="form">
+                    <p>Safe distance </p><input class="inp" type="number" id="susana">
+                    <p>Capacity </p><input class="inp" type="number" id="capacity">
+                    <p>People </p><input class="inp" type="number" id="people">
+                    <p>Rows </p><input class="inp" type="number" id="rows">
+                    <button onclick="addRows()" class="button-style"><a>Add rows</a></button>
+                    <button onclick="blockSeats()" class="button-style"><a>Calculate available seats</a></button>
+                    <button onclick="addSeats()" class="button-style"><a>Add selected seats</a></button>
+                    <button onclick="restartSeats()" class="button-style"><a>Clean</a></button>
+                    <p class="text">You have selected <span id="count">0</span> seats</p>
+                </div>
+                <div class="container" id="cnt">
+                    <ul class="showcase">
+                        <li>
+                            <div class="seat"></div>
+                            <small>Free</small>
+                        </li>
+                        <li>
+                            <div class="seat selected"></div>
+                            <small>Selected</small>
+                        </li>
+                        <li>
+                            <div class="seat blocked"></div>
+                            <small>Blocked</small>
+                        </li>
+                        <li>
+                            <div class="seat occupied"></div>
+                            <small>Occupied</small>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </main>
+        <script src="script.js"></script>
+    </body>
+</html>

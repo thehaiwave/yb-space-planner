@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(38, 37, 37);
+}
+a{
+    text-decoration: none;
+}
+button{
+    background: none;
+    border: none;
+}
+.nav{
+    display: grid;
+    grid-template-columns: 20% auto auto 35%;
+    grid-template-areas: "l . . b1";
+    text-align: center;
+    padding: 5%;
+    background-color: rgb(255, 255, 255);
+}
+.logo{
+    font-weight: bold;
+    margin: 0 15%;
+    height: 150%;
+    grid-area: l;
+    font-size: 100%;
+}
+.logo:hover{
+    background-color: rgba(0,0,0,0.1);
+}
+.b1{
+    font-weight: bold;
+    margin: 0 15%;
+    height: 150%;
+    grid-area: b1;
+    font-size: 100%;
+}
+.b1:hover{
+    background-color: rgba(0,0,0,0.1);
+}
+.photo-container{
+    background-image: url("assets/pexels-sourav-mishra-1309644.jpg");
+    position: relative;
+    text-align: center;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.stock-photo{
+    background-color: rgba(59, 92, 201, 0.4);
+    height: 100%;
+    height: 350px;
+    
+}
+.stock-photo img{
+    width: 100%;
+    height: 100%;
+
+}
+.photo-message{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 250%;
+    font-weight: bold;
+    color: white;
+}
+.main-content{
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: auto;
+    grid-template-areas: 
+    "t"
+    "iso"
+    "b";
+    text-align: center;
+}
+.title{
+    padding: 2% 0;
+    grid-area: t;
+    font-size: 200%;
+    font-weight: bold;
+}
+.isometric{
+    grid-area: iso;
+    height: 300px;
+}
+.isometric img{
+    height: 100%;
+}
+.button{
+    border: 1px solid rgb(38, 37, 37);
+    border-radius: 5%;
+    font-size: 150%;
+    grid-area: b;
+    height: 100%;
+    margin: 0 35%;
+    margin-bottom: 2%;
+}
+
+@media only screen and (min-width: 768px) {
+    .nav{
+        padding: 2.5%;
+    }
+    .isometric{
+        grid-area: iso;
+        height: 300px;
+    }
+    .stock-photo{
+        height: 400px;
+    }
+    .photo-message{
+        font-size: 300%;
+    }
+}
+@media only screen and (min-width: 1000px) {
+    .stock-photo{
+        height: 500px;
+    }
+}
