@@ -100,6 +100,14 @@ button{
     height: 100%;
     margin: 0 35%;
     margin-bottom: 2%;
+    transition: height 1s;
+}
+.button:hover{
+    height: 120%;
+    background-color: rgba(24, 69, 218, 0.8);
+}
+.button:hover a{
+    color: white;
 }
 
 @media only screen and (min-width: 768px) {

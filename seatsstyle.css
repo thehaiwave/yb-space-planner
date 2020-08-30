@@ -20,6 +20,9 @@ main {
     height: 20%;
     margin: 0;
 }
+.msg{
+    text-align: center;
+}
 .inp{
     border-radius: 5px;
 }
@@ -32,6 +35,10 @@ main {
     color: white;
     font-weight: bold;
     height: 100%;
+}
+.button-style:hover{
+    cursor: pointer;
+    background-color: rgba(57, 57, 57, 0.4);
 }
 .nav{
     display: grid;
